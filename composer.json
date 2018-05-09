@@ -1,0 +1,21 @@
+{
+    "name": "mukadi/doctrine-crud",
+    "description": "It's simple CRUD Helper for Doctrine Managed entities.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olivier M. Mukadi",
+            "email": "mbo2olivier@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "doctrine/common": "^2.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mukadi\\Doctrine\\CRUD\\": "src"
+        }
+    }
+}
