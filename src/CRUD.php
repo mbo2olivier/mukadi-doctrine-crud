@@ -79,10 +79,10 @@ class CRUD implements CRUDInterface{
         return $this->om->createQuery($query)->getSingleScalarResult();
     }
 
-    public function listing($criteria = array()){
+    public function listing($args = array()){
         $qb = $this->getQueryBuilder();
 
-        foreach($criteria as $key => $val) {
+        foreach($args as $key => $val) {
             if($key === "limit") {
                 if(isset($val['first'])) {
                     $qb->setFirstResult($val['first']);
